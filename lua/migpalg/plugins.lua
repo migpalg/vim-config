@@ -41,5 +41,12 @@ return require('packer').startup(function(use)
 	};
 
     use('sbdchd/neoformat');
+
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons', -- optional
+        },
+    }
 }
 end)
